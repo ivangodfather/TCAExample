@@ -11,7 +11,7 @@ import SwiftUI
 struct NewTCAExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(store: .init(initialState: .init(), reducer: RootFeature()))
         }
     }
 }
